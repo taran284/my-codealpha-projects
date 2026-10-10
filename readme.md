@@ -1,19 +1,20 @@
-# 📱 Random Quote Generator
+# 📱 Flashcard Quiz App
 
 ## 🚀 Project Description
 
-This is a simple and interactive **Random Quote Generator App** developed as part of the CodeAlpha Internship.
-The app displays a random motivational quote each time the user clicks a button or opens the app.
+This is a simple and interactive **Flashcard Quiz App** developed as part of the CodeAlpha Internship.
+The app helps users study using flashcards where each card contains a question and its answer.
 
 ---
 
 ## ✨ Features
 
-* 📌 Displays random quotes
-* 🔄 "New Quote" button for generating quotes
-* 👤 Shows author name
-* ⚡ Auto-generate quote on app load
-* 🎨 Clean and minimal user interface
+* 📌 Display question on screen
+* 👀 Show answer with a button
+* ⏭ Navigate using Next and Previous buttons
+* ➕ Add new flashcards
+* 💾 Data stored using local storage (if implemented)
+* 🎨 Simple and clean user interface
 
 ---
 
@@ -27,9 +28,9 @@ The app displays a random motivational quote each time the user clicks a button 
 
 ## 📂 Project Structure
 
-* `index.html` → Structure of the app
-* `style.css` → Styling and design
-* `script.js` → Logic and functionality
+* `index.html` → Main structure of the app
+* `style.css` → Styling and layout
+* `script.js` → Functionality and logic
 
 ---
 
@@ -44,18 +45,21 @@ The app displays a random motivational quote each time the user clicks a button 
 
 ## 🎯 Usage
 
-* Click **New Quote** to generate a random quote
-* A new quote and author will be displayed each time
+* Click **Show Answer** to view the answer
+* Use **Next / Previous** to navigate between flashcards
+* Add new flashcards using input fields
 
 ---
 
 ## 📌 Internship Task
 
 This project is developed for:
-**CodeAlpha Internship - App Development Task 2**
+**CodeAlpha Internship - App Development Task 1**
 
 ---
 
 ## 📬 Author
 
 * Name: ANU B
+
+---

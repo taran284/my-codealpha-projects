@@ -1,13 +1,43 @@
-let quotes = [
-    { text: "The best way to get started is to quit talking and begin doing.", author: "Walt Disney" },
-    { text: "Don’t let yesterday take up too much of today.", author: "Will Rogers" },
-    { text: "It’s not whether you get knocked down, it’s whether you get up.", author: "Vince Lombardi" },
-    { text: "If you are working on something exciting, it will keep you motivated.", author: "Steve Jobs" },
-    { text: "Success is not in what you have, but who you are.", author: "Bo Bennett" }
+let flashcards = [
+    { question: "What is HTML?", answer: "HyperText Markup Language" },
+    { question: "What is CSS?", answer: "Cascading Style Sheets" },
+    { question: "What is JS?", answer: "JavaScript" }
 ];
 
-function newQuote() {
-    let randomIndex = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerText = quotes[randomIndex].text;
-    document.getElementById("author").innerText = "- " + quotes[randomIndex].author;
+let currentIndex = 0;
+
+function displayCard() {
+    document.getElementById("question").innerText = flashcards[currentIndex].question;
+    document.getElementById("answer").innerText = flashcards[currentIndex].answer;
+    document.getElementById("answer").classList.add("hidden");
 }
+
+function showAnswer() {
+    document.getElementById("answer").classList.remove("hidden");
+}
+
+function nextCard() {
+    currentIndex = (currentIndex + 1) % flashcards.length;
+    displayCard();
+}
+
+function prevCard() {
+    currentIndex = (currentIndex - 1 + flashcards.length) % flashcards.length;
+    displayCard();
+}
+
+function addCard() {
+    let q = document.getElementById("newQuestion").value;
+    let a = document.getElementById("newAnswer").value;
+
+    if (q && a) {
+        flashcards.push({ question: q, answer: a });
+        document.getElementById("newQuestion").value = "";
+        document.getElementById("newAnswer").value = "";
+        alert("Flashcard added!");
+    } else {
+        alert("Please enter both fields");
+    }
+}
+
+displayCard();

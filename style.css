@@ -1,31 +1,33 @@
 body {
     font-family: Arial;
-    background: linear-gradient(to right, #74ebd5, #9face6);
+    background: #f4f4f4;
     text-align: center;
-    color: #333;
 }
 
 .container {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
-.quote-box {
+.card {
     background: white;
     padding: 20px;
     margin: 20px auto;
-    width: 350px;
+    width: 300px;
     border-radius: 10px;
     box-shadow: 0 0 10px gray;
 }
 
-button {
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
+.hidden {
+    display: none;
 }
 
-button:hover {
-    background-color: #007BFF;
-    color: white;
+button {
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
 }
